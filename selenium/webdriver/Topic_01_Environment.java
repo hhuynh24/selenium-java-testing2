@@ -1,5 +1,6 @@
 package webdriver;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -28,6 +29,7 @@ public class Topic_01_Environment   {
     public void TC_03_Run_On_Edge() {
         driver = new EdgeDriver();
         driver.get("https://www.facebook.com/");
+        driver.findElement(By.cssSelector(""));
         driver.quit();
     }
 }
